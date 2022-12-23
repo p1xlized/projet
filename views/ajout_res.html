@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter une Reservation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+    <header id="Nav"></header>
+    <main class="my-6 content-grow is-flex is-align-items-center">
+        <section class="container">
+            <h1 class="title has-text-centered">
+                <span class="mr-6" id="Title">
+                    Ajout ou modification d'une offre
+                </span>
+            </h1>
+            <div>
+                <div class="box">
+
+                    <div class="column is-full">
+                        <div class="field columns is-multiline is-mobile">
+                            <label
+                                class="label column is-3 is-offset-1-tablet is-flex is-justify-content-space-between">
+                                <span>Nom:</span>
+                                <span class="has-text-danger">*</span>
+                            </label>
+
+                            <div class="control column">
+                                <input class="input" type="text" placeholder="Entrez le Pernom" id="nomFamille" />
+                            </div>
+                        </div>
+                        <div class="field columns is-multiline is-mobile">
+                            <label
+                                class="label column is-3 is-offset-1-tablet is-flex is-justify-content-space-between">
+                                <span>Prenom:</span>
+                                <span class="has-text-danger">*</span>
+                            </label>
+
+                            <div class="control column">
+                                <input class="input" type="text" placeholder="Entrez le Pernom" id="nomFamille" />
+                            </div>
+                        </div>
+                        <div class="field columns is-multiline is-mobile">
+                            <label
+                                class="label column is-3 is-offset-1-tablet is-flex is-justify-content-space-between">
+                                <span>Courriel:</span>
+                                <span class="has-text-danger">*</span>
+                            </label>
+
+                            <div class="control column">
+                                <input class="input" type="email" placeholder="Entrez votre Courriel" id="nomFamille" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="column is-full">
+                        <div class="field columns is-multiline is-mobile">
+                            <label class="label column is-3 is-offset-1-tablet" for="date">Date :</label>
+
+                            <div class="field is-grouped is-grouped-multiline column">
+                                <div class="control is-expanded">
+                                    <div class="select is-fullwidth">
+                                        <select name="jour" id="jour"></select>
+                                    </div>
+                                </div>
+                                <div class="control is-expanded">
+                                    <div class="select is-fullwidth">
+                                        <select name="mois" id="mois"></select>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control">
+                        <div class="column is-full">
+                            <div class="field columns is-multiline is-mobile">
+                                <label
+                                    class="label column is-3 is-offset-1-tablet is-flex is-justify-content-space-between"
+                                    for="categorie"><span>Destination:</span>
+                                    <span class="has-text-danger">*</span></label>
+                                <div class="control is-expanded column">
+                                    <div class="select is-fullwidth is-info">
+                                        <select name="categorie" id="categorie">
+                                            <option>Choisissez votre Destination</option>
+                                            <option>Saint Jovite(Mont-Tremblant)</option>
+                                            <option>St-Donat</option>
+                                            <option>Ste-Agathe</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <br>
+            <div class="box">
+
+            </div>
+            <div class="columns">
+                <div class="column is-4">
+                    <div class="notification">
+                        <div class="field">
+                            <label class="label">
+                                Places disponible
+                            </label>
+                            <div class="control">
+                                <div class="select">
+                                    <select>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column is-4">
+                    <div class="notification ">
+                        <div class="field">
+                            <label class="label">
+                                Duree
+                            </label>
+                            <div class="control">
+                                <div class="select">
+                                    <select>
+                                        <option>1 Heure</option>
+                                        <option>2 Heure</option>
+                                        <option>3 Heure</option>
+                                        <option>4 Heure</option>
+                                        <option>5 Heure</option>
+                                        <option>6 Heure</option>
+                                        <option>7 Heure</option>
+                                        <option>8 Heure</option>
+                                        <option>9 Heure</option>
+                                        <option>10 Heure</option>
+                                        <option>11 Heure</option>
+                                        <option>12 Heure</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="notification">
+                        <div class="field">
+                            <label class="label">
+                                Payement
+                            </label>
+                            <div class="control">
+                                <div class="select">
+                                    <select>
+                                        <option>Cash</option>
+                                        <option>Interac</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <label class="checkbox is-c">
+                    <input type="checkbox">
+                    Je suis d'accord avec <a href="#">les termes et les conditions</a>
+                </label>
+            </div>
+
+
+            <br>
+            <div class="box">
+
+
+                <div class="columns is-multiline is-mobile is-centered">
+                    <div class="column is-narrow" id="btnAjouterPersonne">
+                        <button class="button is-success">Ajouter une Reservation</button>
+                    </div>
+                    <div class="column is-narrow is-hidden" id="btnModifierPersonne">
+                        <button class="button is-success">Modifier la Reservation</button>
+                    </div>
+                    <div class="column is-narrow is-hidden" id="btnSupprimerPersonne">
+                        <button class="button is-danger">Supprimer</button>
+                    </div>
+                    <div class="column is-narrow" id="btnAnnuler">
+                        <button class="button is-danger">Annuler</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="pied"></footer>
+</body>
+<script type="module" src="views/ajout_res.js"></script>
+
+</html>
